@@ -1,7 +1,7 @@
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
-// Print password to the #password input
+// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -56,21 +56,34 @@ length = window.prompt( "Please enter the selected length for your password.", "
 
 // If password length doesn't meet criteria, return blank
 
-if (length <= 8 && length >++= 128) {
+if (length <= 8 && length >= 128) {
   return "";
 }
 
-if ()
+    // Prompt the user to determine if they want uppercase characters and store it in a variable
+
     useUpper = window.confirm( "Would you like to use uppercase letters?\n(OK-Yes Cancel-No)" );
    
+    // Prompt the user to determine if they want lowercase characters and store it in a variable
+
     useLower = window.confirm( "Would you like to use lowercase letters?\n(OK-Yes Cancel-No)" );
+
+    // Prompt the user to determine if they want numbers and store it in a variable
 
     useNumbers = window.confirm( "Would you like to use numbers?\n(OK-Yes Cancel-No)" );
 
+    // Prompt the user to determine if they want special characters and store it in a variable
+
     useSpecial = window.confirm( "Would you like to use special characters?\n(OK-Yes Cancel-No)" );
 
-// validate that >= 1 type of character has been selected
-if (useUpper || useLower || useNumbers || useSpecial) {
+
+  // validate that >= 1 type of character has been selected (i.e.; at least one character choice is true)
+
+  if (!useUpper && !useLower && !useNumbers && !useSpecial) {
+    // Alert the user that they must choose at least one character type
+    window.alert("You must select at least one character type to generate your password.");
+    return "";
+  }
 
   // assemble a character set from the selected variables (i.e.; character types)
   if (useUpper) {
@@ -93,23 +106,9 @@ if (useUpper || useLower || useNumbers || useSpecial) {
 
   }
 }
-  }
 
 
-
-// Prompt the user for if they want special characters and store it in a variable
-
-}
 
 // Get references to the #generate element
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 
