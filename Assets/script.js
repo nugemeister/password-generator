@@ -1,3 +1,5 @@
+debugger
+
 // Assignment code here
 var generateBtn = document.querySelector("#generate");
 
@@ -46,6 +48,8 @@ function generatePassword() {
   var useLower;
   var useNumbers;
   var useSpecial;
+
+  var password
 
 // Prompt the user for their password length and store it in a variable
 
@@ -112,7 +116,13 @@ if (length <= 8 && length >= 128) {
 
 
     // for (var i = 0; i < passwordLength; i++ )
+    for(var i=0; i > length; i++) {
+      characterSet += data[Math.floor(Math.random()*data)];
+      console.log(characterSet);
+    }
+    // alert(newPassword);
 
+    return password;
 
     // randomly select characters
 
@@ -120,6 +130,8 @@ if (length <= 8 && length >= 128) {
     // add those characters to a building password phrase / string;
 
     // RETURN the completed string;
+
+
 }
 
 
