@@ -49,7 +49,7 @@ function generatePassword() {
   var useNumbers;
   var useSpecial;
 
-  var password
+  var password = "";
 
 // Prompt the user for their password length and store it in a variable
 
@@ -60,7 +60,7 @@ length = parseInt(window.prompt( "Please enter the selected length for your pass
 // If password length doesn't meet criteria, return blank
 
 if (length <= 8 && length >= 128) {
-  return "";
+  return password = "";
 }
 
     // Prompt the user to determine if they want uppercase characters and store it in a variable
@@ -116,7 +116,7 @@ if (length <= 8 && length >= 128) {
 
     // for (var i = 0; i < passwordLength; i++ )
     for(var i=0; i < length; i++) {
-      password += length[Math.floor(Math.random()*length)];
+      password += characterSet[Math.floor(Math.random()*array.length)];
       console.log(password);
     }
     // alert(newPassword);
