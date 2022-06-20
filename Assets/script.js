@@ -116,8 +116,8 @@ if (length <= 8 && length >= 128) {
 
     // for (var i = 0; i < passwordLength; i++ )
     for(var i=0; i < length; i++) {
-      characterSet += length[Math.floor(Math.random()*length)];
-      console.log(characterSet);
+      password += length[Math.floor(Math.random()*length)];
+      console.log(password);
     }
     // alert(newPassword);
 
