@@ -85,7 +85,9 @@ if (length <= 8 && length >= 128) {
     return "";
   }
 
-  // assemble a character set from the selected variables (i.e.; character types)
+  // Declare a new empty array to store the characters we want to use
+
+
   if (useUpper) {
     characterSet = characterSet.concat( upperCaseLetters );
 
@@ -105,6 +107,19 @@ if (length <= 8 && length >= 128) {
     characterSet = characterSet.concat( specialCharacters );
 
   }
+
+    // DECLARE an empty string to store the password characters
+
+
+    // for (var i = 0; i < passwordLength; i++ )
+
+
+    // randomly select characters
+
+
+    // add those characters to a building password phrase / string;
+
+    // RETURN the completed string;
 }
 
 
