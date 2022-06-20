@@ -59,7 +59,7 @@ length = parseInt(window.prompt( "Please enter the selected length for your pass
 
 // If password length doesn't meet criteria, return blank
 
-if (length <= 8 && length >= 128) {
+if (length <= 8 || length >= 128) {
   return password = "";
 }
 
@@ -116,7 +116,7 @@ if (length <= 8 && length >= 128) {
 
     // for (var i = 0; i < passwordLength; i++ )
     for(var i=0; i < length; i++) {
-      password += characterSet[Math.floor(Math.random()*array.length)];
+      password += characterSet[Math.floor(Math.random()*characterSet.length)];
       console.log(password);
     }
     // alert(newPassword);
