@@ -53,8 +53,7 @@ function generatePassword() {
 
 // Prompt the user for their password length and store it in a variable
 
-length = window.prompt( "Please enter the selected length for your password.", "" );
-
+length = parseInt(window.prompt( "Please enter the selected length for your password.", "" ));
 
 // Validate the password length and make sure it's a number between or equal to 8 and 128
 
@@ -116,8 +115,8 @@ if (length <= 8 && length >= 128) {
 
 
     // for (var i = 0; i < passwordLength; i++ )
-    for(var i=0; i > length; i++) {
-      characterSet += data[Math.floor(Math.random()*data)];
+    for(var i=0; i < length; i++) {
+      characterSet += length[Math.floor(Math.random()*length)];
       console.log(characterSet);
     }
     // alert(newPassword);
