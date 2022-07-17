@@ -14,7 +14,6 @@ function main(){
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
 }
 
 // Calling the main function to "run"
@@ -71,8 +70,18 @@ function buildCharacterSet(mySetting) {
 
 // Generate the randomized password
 
-// function generatePassword(characterSet) {
-//   var length = parseInt(window.prompt("Please enter the selected length for your password.",""));
+function generatePassword(characterSet) {
+  var length = parseInt(window.prompt("Please enter the selected length for your password.",""));
 
-//   if ()
-// }
+  if (length <= 8 || length >= 128) {
+    return password = "";
+  }
+
+  for  (var i = 0; i < length; i++) {
+    password += characterSet[Math.floor(Math.random()*characterSet.length)];
+    console.log(password);
+  }
+
+  // Return the generated password
+  return password;
+}
