@@ -23,6 +23,7 @@ function generatePassword() {
     } else {
       return length;
     }
+  }
 
 // Returns user if they cancel operation for pw entry
   if (length === undefined) {
@@ -30,7 +31,7 @@ function generatePassword() {
   }
 
   console.log(length)
-
+  
   // Collecting the set of settings the user prefers
   var mySetting = getSettings()
 
