@@ -23,7 +23,7 @@ function generatePassword() {
     } else {
       return length;
     }
-  }
+
 // Returns user if they cancel operation for pw entry
   if (length === undefined) {
     return "Your Secure Password";
