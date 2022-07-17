@@ -87,6 +87,7 @@ function createPassword(){
 // Return the generated password
   return newPassword;
 }
+}
 
 // Starter Code
 
