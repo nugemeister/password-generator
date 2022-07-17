@@ -2,7 +2,7 @@ debugger
 
 // Assignment code here (this is the main function)
 
-function main(){
+function writePassword(){
   var mySetting = getSettings()
   var myCharacterSet = buildCharacterSet(mySetting)
   var password = generatePassword(myCharacterSet)
